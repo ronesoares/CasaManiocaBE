@@ -8,12 +8,15 @@ export const mailerConfig = MailerModule.forRoot({
     port: 465,
     secure: true,
     auth: {
-      user: 'casamaniocadeveloper@gmail.com',
-      pass: 'password',
+      user: 'casamanioca.developer@gmail.com',
+      pass: 'lqgh kfyy vnsi rixw',
+    },
+    tls: {
+      rejectUnauthorized: true,
     },
   },
   defaults: {
-    from: '"No Reply" <casamaniocadeveloper@gmail.com>',
+    from: '"No Reply" <casamanioca.developer@gmail.com>',
   },
   template: {
     dir: join(__dirname, 'templates'),

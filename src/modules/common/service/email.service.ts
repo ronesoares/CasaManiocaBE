@@ -22,7 +22,7 @@ export class EmailService {
     }
     catch (error)
     {
-        new BadRequestException(error);
+      throw new BadRequestException(error);
     }
   }
 }
